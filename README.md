@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://64.media.tumblr.com/b0c1166eb2f48db1329bfadd7ca1e2fd/e9de5939f13c7766-3b/s1280x1920/a669ade4de61aa0c251c31e8ef4bcae6051ae5e6.gifv" width="818" height="460"/>
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fprayerdimple%2Fuzaki%2F&psig=AOvVaw1DY-kcTbMup_1SAXsMy8NI&ust=1618663541239000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDH6Y7zgvACFQAAAAAdAAAAABAp" width="480" height="270"/>
 </p>
 
 # 🖤MeliodasBot08👻

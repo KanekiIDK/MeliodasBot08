@@ -38,4 +38,4 @@ npm start
 
 
 
-### Escaneas el QR y listo comando para activarlo  *help
+### Escaneas el QR y listo comando para activarlo  /help

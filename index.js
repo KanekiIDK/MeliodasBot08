@@ -84,7 +84,7 @@ const vcard = 'BEGIN:VCARD\n' // Tarjeta de contacto
             + 'END:VCARD'
 /******END OF VCARD INPUT******/
 
-prefix = '*'
+prefix = '/'
 blocked = []
 
 /******BEGIN OF FUNCTIONS INPUT******/

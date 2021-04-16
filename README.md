@@ -21,9 +21,9 @@ pkg install nodejs
 
 pkg install npm
 
-git clone https://github.com/shanduy/ShanBot
+git clone https://github.com/MeliodasJAJA/MeliodasBot08
 
-cd ShanBot
+cd MeliodasBot08
 
 bash install.sh
 

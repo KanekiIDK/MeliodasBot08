@@ -78,9 +78,9 @@ const { othermenu } require('./database/menu/othermenu')*/
 /******LOAD OF VCARD INPUT******/
 const vcard = 'BEGIN:VCARD\n' // Tarjeta de contacto
             + 'VERSION:10.0\n' 
-            + 'FN:Shanduy\n' // Nombre
-            + 'ORG:Shanduy;\n' // Propietario
-            + 'TEL;type=CELL;type=VOICE;waid=593967689722:+593 96 768 9722\n' // ID de WhatsApp + número de teléfono
+            + 'FN:KanekiIDK\n' // Nombre
+            + 'ORG:KanekiIDK;\n' // Propietario
+            + 'TEL;type=CELL;type=VOICE;waid=50582733230:+505 8273 3230\n' // ID de WhatsApp + número de teléfono
             + 'END:VCARD'
 /******END OF VCARD INPUT******/
 
@@ -173,7 +173,7 @@ async function starts() {
 	client.logger.level = 'warn'
 	console.log(banner.string)
 	client.on('qr', () => {
-		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Escanea el codigo QR no te tardes '))
+		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Escanea el codigo QR no te tardes weon '))
 	})
 
 	fs.existsSync('./Nazwa.json') && client.loadAuthInfo('./Nazwa.json')
@@ -244,8 +244,8 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: 'Calmao gordo puto estoy procesando 😎👏\n\nNo spames negro del orto 🤬🤑\n\nSi usastes la funcion *play asegurate de colocar bien el nombre de la cancion junto al artista 🧐',
-				success: '✔️ Listo ✔️',
+				wait: 'Calmao putita, espera mientras proceso 😎👏\n\nNo spames HDTPM,\n\nSi usastes la funcion *play asegurate de colocar bien el nombre de la cancion junto al artista 🧐',
+				success: '✔️ ya ️',
                                 levelon: '❬ ✔ ❭ *Level activado*',
 				leveloff: ' ❬ X ❭  *Level desactivado*',
 				levelnoton: '❬ X ❭ *Level no esta activado*',
@@ -268,7 +268,7 @@ async function starts() {
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["593997889284@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["50582733230@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -286,7 +286,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '593997889284@s.whatsapp.net'
+                        const NomerOwner = '50582733230@s.whatsapp.net'
                         /******ApiKey Input******/
                         const BarBarKey = 'TU CLAVE API'
                         /******End of ApiKey Input******/
@@ -458,7 +458,7 @@ async function starts() {
               case 'owner':
                 case 'creator':
                   client.sendMessage(from, {displayname: "Shanduy", vcard: vcard}, MessageType.contact, { quoted: mek})
-               client.sendMessage(from, 'Aquí está el número de mi propietario, puedes guardar más tarde',MessageType.text, { quoted: mek} )
+               client.sendMessage(from, 'Aquí está el número de mi dios DeA, puedes guardar más tarde',MessageType.text, { quoted: mek} )
                 break
 	case 'hidetag':
                 client.updatePresence(from, Presence.composing) 
@@ -721,7 +721,7 @@ async function starts() {
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					dtt.length > 600
-					? reply('Texto muy largo weon')
+					? reply('Texto muy largo wn')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
@@ -807,7 +807,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', members_id, true)
+					mentions('╔══✪〘 HOLAAA 🥵🙏A Todos 〙✪══\n╠➥'+teks+'╚═〘 KanekiIDK 〙', members_id, true)
 					break
                 case 'tagall2':
 				client.updatePresence(from, Presence.composing) 
@@ -820,7 +820,7 @@ async function starts() {
 						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 HOLAAA 🥵🙏A Todos 〙✪══\n╠➥'+teks+'╚═〘 KanekiIDK 〙', text, {quoted: mek})
 					break
                 case 'tagall3':
 				client.updatePresence(from, Presence.composing) 
@@ -833,7 +833,7 @@ async function starts() {
 						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, '╔══✪〘 HOLAAA 🥵🙏A Todos 〙✪══\n╠➥'+teks+'╚═〘 KanekiIDK 〙', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall4':
 				client.updatePresence(from, Presence.composing) 
@@ -846,7 +846,7 @@ async function starts() {
 						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 HOLAAA 🥵🙏A Todos 〙✪══\n╠➥'+teks+'╚═〘 KanekiIDK 〙', text, {quoted: mek})
 					break
                 case 'tagall5':
 				client.updatePresence(from, Presence.composing) 
@@ -859,7 +859,7 @@ async function starts() {
 						teks += `╠➥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('╔══✪〘 Mencionando A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙')
+					reply('╔══✪〘 HOLAAA 🥵🙏A Todos 〙✪══\n╠➥'+teks+'╚═〘 KanekiIDK 〙')
 					break
 				case 'send':
 					var pc = body.slice(6)
@@ -951,7 +951,7 @@ async function starts() {
 					}, 2000)
                      setTimeout( () => {
 					client.updatePresence(from, Presence.composing) 
-					client.sendMessage(from, 'Chao Pa👋', text) // ur cods
+					client.sendMessage(from, 'Chao we', text) // ur cods
 					}, 0)
                      break
 
@@ -1315,7 +1315,7 @@ async function starts() {
 					var umure = reg.split("|")[1];
 						user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `\`\`\`Registrado con exito flaco 👏😎🥳\`\`\`\n\n\`\`\`DNI: Socio De La Oscu Army 🤑😎\`\`\`\n\n\`\`\`Dia ${date} ${time}\`\`\`\n\`\`\`[Usuario]: ${jeneng}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `\`\`\`Registrado con exito flaco 👏😎🥳\`\`\`\n\n\`\`\`DNI: 😎\`\`\`\n\n\`\`\`Dia ${date} ${time}\`\`\`\n\`\`\`[Usuario]: ${jeneng}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
 					break
                                 case 'welcome':
 					if (!isGroup) return reply(mess.only.group)
@@ -1575,7 +1575,7 @@ async function starts() {
                                                 if (!isUser) return reply(mess.only.daftarB)
                                                 res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=BotWeA`, {method: 'get'})
                                                 buffer = await getBuffer(res.result)
-                                                client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Estas enfermo flaco'})
+                                                client.sendMessage(from, buffer, image, {quoted: mek, caption: 'UFAASSSS si le doy '})
                                         } catch (e) {
                                                 console.log(`*Error* :`, color(e,'red'))
                                                 reply('❌ *ERROR* ❌')
@@ -1586,7 +1586,7 @@ async function starts() {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=BotWeA`, {method: 'get'})
 							buffer = await getBuffer(res.result)
-							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Otaku que se esperaba'})
+							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Otaku,que se esperaba'})
 						} catch (e) {
 							console.log(`Error :`, color(e,'red'))
 							reply('❌ *ERROR* ❌')
@@ -1597,7 +1597,7 @@ async function starts() {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://api.lolis.life/random?nsfw=true`, {method: 'get'})
 							buffer = await getBuffer(res.url)
-							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Alto pedofilo socio'})
+							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'e...'})
 						} catch (e) {
 							console.log(`Error :`, color(e,'red'))
 							reply('❌ *ERROR* ❌')
@@ -1608,7 +1608,7 @@ async function starts() {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/biganimetiddies`, {method: 'get'})
 							buffer = await getBuffer(res.url)
-							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Quiero ver tetas'})
+							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Quiero ver tetas🥵🙏'})
 						} catch (e) {
 							console.log(`Error :`, color(e,'red'))
 							reply('❌ *ERROR* ❌')
@@ -1641,7 +1641,7 @@ async function starts() {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://api.computerfreaker.cf/v1/trap`, {method: 'get'})
 							buffer = await getBuffer(res.result)
-							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Na flaco estas re enfermo'})
+							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'OK...'})
 						} catch (e) {
 							console.log(`Error :`, color(e,'red'))
 							reply('❌ *ERROR* ❌')
@@ -1663,7 +1663,7 @@ async function starts() {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/sideoppai`, {method: 'get'})
 							buffer = await getBuffer(res.url)
-							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'La vieja de gabo, tremenda puta'})
+							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'a'})
 						} catch (e) {
 							console.log(`Error :`, color(e,'red'))
 							reply('❌ *ERROR* ❌')
@@ -1674,7 +1674,7 @@ async function starts() {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/ahegao`, {method: 'get'})
 							buffer = await getBuffer(res.url)
-							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Joder, quisiera follarmela'})
+							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Joder, joder, me la follo?'})
 						} catch (e) {
 							console.log(`Error :`, color(e,'red'))
 							reply('❌ *ERROR* ❌')
@@ -1718,7 +1718,7 @@ async function starts() {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=BotWeA`, {method: 'get'})
 							buffer = await getBuffer(res.url)
-							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Bro....'})
+							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'XD'})
 						} catch (e) {
 							console.log(`Error :`, color(e,'red'))
 							reply('❌ *ERROR* ❌')
@@ -1937,7 +1937,7 @@ async function starts() {
 					client.sendMessage(from, buffer, video, {quoted: mek})
 					break
 				case 'ttp':
-					if (args.length < 1) return reply('Y el texto flaco?')
+					if (args.length < 1) return reply('Y el texto Wn?')
 					ranp = getRandom('.png')
 					rano = getRandom('.webp')
 					teks = body.slice(4).trim()

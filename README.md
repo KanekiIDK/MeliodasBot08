@@ -2,7 +2,7 @@
 <img src="https://64.media.tumblr.com/b0c1166eb2f48db1329bfadd7ca1e2fd/e9de5939f13c7766-3b/s1280x1920/a669ade4de61aa0c251c31e8ef4bcae6051ae5e6.gifv" width="818" height="460"/>
 </p>
 
-# 🖤MeliodasBot06💥
+# 🖤MeliodasBot08👻
 
 #### WhatsApp Bot
 
@@ -31,7 +31,7 @@ npm start
 ```
 
 ---------
-## ❤Gracias por usar🖤 ⚜🟢MeliodasBot^^❤✅
+## ⚜🟢MeliodasBot^^❤✅
 
 
 
